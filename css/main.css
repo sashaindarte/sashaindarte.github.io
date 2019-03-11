@@ -48,6 +48,9 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-.fa-circle:hover {
+.fa-envelope:hover {
+    color: #633dff;
+}
+.fa-twitter:hover {
     color: #633dff;
 }
