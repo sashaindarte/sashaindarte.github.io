@@ -2,7 +2,19 @@ body {
     margin: 0;
     font-family:'Open Sans', 'Sans-Serif';
 }
-nav ul, footer ul {
+nav ul {
+    font-family:'Open Sans', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.75em;
+    text-align: right;
+}
+nav {
+    background-color: #633dff;
+}
+
+footer ul {
     font-family:'Open Sans', 'Sans-Serif';
     padding: 0px;
     list-style: none;
