@@ -7,10 +7,21 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    font-size: 2em;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    font-family:'Lato', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-family:'Lato', 'Sans-Serif';
+    color: #333;
 }
 a {
     text-decoration: none;
@@ -21,19 +32,9 @@ a:hover {
     color: #999;
     font-family:'Lato', 'Sans-Serif';
 }
-h1 {
-    font-size: 3em;
-    font-family:'Lato', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    font-family:'Lato', 'Sans-Serif';
-    color: #333;
-}
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 ul.posts { 
