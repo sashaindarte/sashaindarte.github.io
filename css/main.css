@@ -84,7 +84,7 @@ ul.posts li {
 .panel {
   padding: 0 18px;
   background-color: white;
-  font-size: 1em;
+  font-size: 15px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
