@@ -17,6 +17,9 @@ h1 {
     font-size: 2.75em;
     font-family:'Lato', 'Sans-Serif';
 }
+h2 {
+    font-family:'Lato', 'Sans-Serif';
+}
 p {
     font-size: 1.5em;
     line-height: 1.4em;
