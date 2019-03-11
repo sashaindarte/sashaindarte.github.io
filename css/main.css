@@ -28,11 +28,11 @@ p {
 }
 a {
     text-decoration: none;
-    color: #16d2fc;
+    color: #999;
     font-family:'Lato', 'Sans-Serif';
 }
 a:hover {
-    color: #999;
+    color: #633dff;
     font-family:'Lato', 'Sans-Serif';
 }
 footer {
@@ -47,4 +47,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+.fa-circle:hover {
+    color: #633dff;
 }
