@@ -1,7 +1,40 @@
 body {
     margin: 60px auto;
     width: 80%;
+    font-family:'Open Sans', 'Sans-Serif';
 }
+
+.header {
+  overflow: hidden;
+  background-color: #633dff;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 40px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: #633dff;
+}
+
+.header-right {
+  float: right;
+}
+
 nav ul, footer ul {
     font-family:'Open Sans', 'Sans-Serif';
     padding: 0px;
