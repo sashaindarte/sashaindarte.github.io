@@ -1,0 +1,11 @@
+# Define social network links
+
+twitter:
+  name: "Twitter"
+  baseURL: "https://twitter.com/"
+  icon: "fa-twitter"
+  
+email:
+  name: "Email me"
+  baseURL: "mailto:"
+  icon: "fa-envelope"
