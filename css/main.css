@@ -41,6 +41,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     font-size: 1.75em;
+    text-align: center;
 }
 nav ul li, footer ul li {
     display: inline;
