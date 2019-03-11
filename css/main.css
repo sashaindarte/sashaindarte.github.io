@@ -14,11 +14,11 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #16d2fc;
     font-family:'Lato', 'Sans-Serif';
 }
 a:hover {
-    text-decoration: underline;
+    color: #999;
     font-family:'Lato', 'Sans-Serif';
 }
 h1 {
