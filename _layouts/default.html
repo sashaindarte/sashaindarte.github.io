@@ -42,7 +42,11 @@
 				<p class="copyright text-muted">
 					&copy; Sasha Indarte
 					&nbsp;&bull;&nbsp;
-					2019
+					{% if page.date %}
+					{{ page.date }}
+					{% else %}
+					{{ site.time | date: '%Y' }}
+					{% endif %}
 				</p>
 			</footer>
 		</body>
