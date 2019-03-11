@@ -8,6 +8,7 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
     font-size: 1.75em;
+    float = right;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -39,6 +40,7 @@ a:hover {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .6em;
+    text-align: center;
 }
 
 ul.posts { 
