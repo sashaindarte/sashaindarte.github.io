@@ -1,2 +1,8 @@
-  name: Sasha Indarte
-  markdown: kramdown
+# Main info
+name: Sasha Indarte
+markdown: kramdown
+
+# Social Info
+social-network-links:
+  email: "indarte@northwestern.edu"
+  twitter: sashaindarte
