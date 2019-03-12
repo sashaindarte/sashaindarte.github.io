@@ -4,9 +4,13 @@ body {
     font-family:'Open Sans', 'Sans-Serif';
 }
 footer {
-    list-style: none;
-    font-size: .5em;
     text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    font-size: .75em;
+    padding: 0px;
 }
 
 /*nav ul {
