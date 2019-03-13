@@ -110,6 +110,12 @@ body {
   padding: 2em 12em 0em 0em;
 }
 
+/* Reserach container */
+.singlecol {   
+  background-color: white;
+  padding: 2em 12em 0em 12em;
+}
+
 /* Footer */
 .footer {
   font-size: .75em;
