@@ -10,7 +10,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: .5em 3em;
+  padding: .5em 5em;
   text-align: left;
   background: #633dff;
   color: white;
@@ -37,7 +37,7 @@ body {
 }
 
 .row .side p {
-    line-height: 5px;
+    line-height: .5em;
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -55,7 +55,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: .5em 2em;
+  padding: .5em 1.5em;
   text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ body {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: white;
-  padding: 100px;
+  padding: 2em 0em 0em 5em;
 }
 
 /* Main column */
@@ -101,7 +101,7 @@ body {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 2em 0em 0em 3em;
+  padding: 2em 5em 0em 0em;
 }
 
 /* Fake image, just for this example */
