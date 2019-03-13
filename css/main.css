@@ -1,85 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
 body {
-    margin: 60px auto;
-    width: 80%;
-    font-family:'Open Sans', 'Sans-Serif';
-}
-footer {
-    text-align: center;
+  font-family:'Lato', 'Sans-Serif';
+  margin: 0;
 }
 
-footer ul {
-    list-style: none;
-    font-size: .75em;
-    padding: 0px;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-/*nav ul {
-    font-family:'Open Sans', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    font-size: 1.75em;
-    text-align: right;
-}
-nav {
-    background-color: #633dff;
+/* Header/logo Title */
+.header {
+  padding: 5px 25px;
+  text-align: left;
+  background: #633dff;
+  color: white;
 }
 
-footer ul {
-    font-family:'Open Sans', 'Sans-Serif';
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.header p {
+  line-height: 5px;
+}
+
+.row .main h2 {
+  font-size: 20px;
+    line-height: 10px;
+}
+
+.row .side h3 {
+  font-size: 18px;
+    line-height: 5px;
+}
+
+.row .side p {
+    line-height: 5px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  float: right;
+    background-color: #666;
+    color: white;
+}
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
     padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    font-size: 1.75em;
     text-align: center;
-}
-h1 {
-    font-size: 2.75em;
-    font-family:'Open Sans', 'Sans-Serif';
-}
-h2 {
-    font-family:'Open Sans', 'Sans-Serif';
-}
-p {
-    font-size: 1.1em;
-    line-height: 2em;
-    text-align: justify;
-    font-family:'Open Sans', 'Sans-Serif';
-    color: #333;
-}
-a {
-    text-decoration: none;
-    color: #333;
-    font-family:'Open Sans', 'Sans-Serif';
-}
-a:hover {
-    color: #633dff;
-    font-family:'Open Sans', 'Sans-Serif';
-}
-footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .75em;
-    text-align: center;
+    margin: 10px 25px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {   
+    flex-direction: column;
+  }
 }
 
-ul.posts li {
-    list-style: none;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
 }
-*/
+
 .fa-envelope:hover {
     color: #633dff;
 }
 .fa-twitter:hover {
     color: #633dff;
 }
+
 .accordion {
   background-color: #eee;
   color: #444;
