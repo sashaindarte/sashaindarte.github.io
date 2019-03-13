@@ -96,18 +96,18 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
   background-color: white;
-  padding: 2em 0em 0em 10em;
+  padding: 2em 0em 0em 12em;
 }
 
 /* Main column */
 .main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
   background-color: white;
-  padding: 2em 10em 0em 0em;
+  padding: 2em 12em 0em 0em;
 }
 
 /* Footer */
