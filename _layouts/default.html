@@ -8,48 +8,25 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		</head>
 		<body>
-			<nav>
+			<div class="header">
 				<h1>Sasha Indarte</h1>
-	    		<ul>
-				<li><a href="/">Home</a></li>
-	        		<li><a href="/cv">CV</a></li>
-				<li><a href="/research">Research</a></li>
-	    		</ul>
-			</nav>
+				<p>Economics PhD Candidate, Northwestern University</p>
+			</div>
+			
+			<div class="navbar">
+				<a href="#" class="right">Research</a>
+				<a href="#" class="right">CV</a>
+				<a href="#" class="right">Home</a>
+			</div>
 
 			<div class="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-				<li>
-					<a href="mailto:indarte@u.northwestern.edu" title="Email me">
-						<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x" style="color:black"></i>
-							<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/sashaindarte" title="Twitter">
-						<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x" style="color:black"></i>
-							<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-				<p align = "center"; class="copyright text-muted">
-					&copy; Sasha Indarte
-					{% if page.date %}
-					{{ page.date }}
-					{% else %}
-					{{ site.time | date: '%Y' }}
-					{% endif %}
-				</p>
-			</footer>
+			<div class="footer">
+				&copy; Sasha Indarte 2019
+			</div>
 			
 			<script>
 				var acc = document.getElementsByClassName("accordion");
