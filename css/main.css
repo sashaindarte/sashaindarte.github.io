@@ -37,7 +37,7 @@ body {
 }
 
 .row .side h3 {
-  font-size: 1.25em;
+  font-size: 1.1em;
     line-height: .25em;
 }
 
@@ -104,28 +104,28 @@ body {
 
 /* Main column */
 .main {   
-  -ms-flex: 60%; /* IE10 */
-  flex: 60%;
-  background-color: white;
-  padding: 2em 12em 0em 0em;
+  	-ms-flex: 60%; /* IE10 */
+  	flex: 60%;
+  	background-color: white;
+  	padding: 2em 12em 0em 0em;
 }
 
 /* Reserach container */
 .singlecol {   
-  background-color: white;
-  padding: 2em 12em 0em 12em;
+  	background-color: white;
+  	padding: 2em 12em 0em 12em;
 }
 
 /* Footer */
 .footer {
 	font-size: .75em;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: white;
-  background-color: #333;
+  	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	text-align: center;
+  	color: white;
+  	background-color: #333;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
