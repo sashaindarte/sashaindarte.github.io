@@ -46,7 +46,7 @@ body {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: right;
+  float: left;
   display: block;
   color: white;
   font-size: 1.25em;
@@ -58,7 +58,7 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: left;
 }
 
 /* Change color on hover */
@@ -89,7 +89,7 @@ body {
   -ms-flex: 40%; /* IE10 */
   flex: 40%;
   background-color: white;
-  padding: 5% 25% 0% 0%;
+  padding: 2% 15% 0% 0%;
 }
 
 /* Main column */
@@ -97,13 +97,13 @@ body {
   	-ms-flex: 60%; /* IE10 */
   	flex: 60%;
   	background-color: white;
-  	padding: 5% 10% 0% 25%;
+  	padding: 2% 4% 0% 15%;
 }
 
 /* Reserach container */
 .singlecol {   
   	background-color: white;
-  	padding: 5% 15%;
+  	padding: 2% 15%;
 }
 
 /* Footer */
