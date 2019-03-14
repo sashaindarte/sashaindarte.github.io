@@ -23,10 +23,6 @@ body {
   line-height: .5em;
 }
 
-.header p {
-  line-height: .25em;
-}
-
 .row .main h2 {
   font-size: 2em;
     line-height: .5em;
@@ -46,7 +42,7 @@ body {
 }
 
 br {
-        line-height: 100%;
+        line-height: 110%;
      }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -61,7 +57,7 @@ br {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
+  float: right;
   display: block;
   color: white;
   font-size: 1.25em;
@@ -73,7 +69,7 @@ br {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: left;
+  float: right;
 }
 
 /* Change color on hover */
@@ -112,7 +108,7 @@ br {
   	-ms-flex: 60%; /* IE10 */
   	flex: 60%;
   	background-color: white;
-  	padding: 2em 12em 0em 2em;
+  	padding: 2em 12em 0em 3em;
 }
 
 /* Reserach container */
