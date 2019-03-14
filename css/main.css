@@ -11,7 +11,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: .25em 2em;
+  padding: 2% 5%;
   text-align: left;
   background: #633dff;
   color: white;
@@ -51,7 +51,7 @@ body {
   color: white;
   font-size: 1.25em;
   text-align: center;
-  padding: .5em 1.5em;
+  padding: 1% 5%;
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ body {
   -ms-flex: 40%; /* IE10 */
   flex: 40%;
   background-color: white;
-  padding: 2% 15% 0% 0%;
+  padding: 2% 10%;
 }
 
 /* Main column */
@@ -97,7 +97,7 @@ body {
   	-ms-flex: 60%; /* IE10 */
   	flex: 60%;
   	background-color: white;
-  	padding: 2% 4% 0% 15%;
+  	padding: 2% 10%;
 }
 
 /* Reserach container */
