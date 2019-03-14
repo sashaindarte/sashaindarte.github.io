@@ -107,7 +107,7 @@ body {
   	-ms-flex: 60%; /* IE10 */
   	flex: 60%;
   	background-color: white;
-  	padding: 2em 12em 0em 0em;
+  	padding: 2em 12em 0em 2em;
 }
 
 /* Reserach container */
