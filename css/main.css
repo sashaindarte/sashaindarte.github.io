@@ -69,7 +69,7 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: left;
 }
 
 /* Change color on hover */
