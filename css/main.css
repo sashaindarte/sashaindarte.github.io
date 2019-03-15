@@ -89,7 +89,7 @@ body {
   -ms-flex: 40%; /* IE10 */
   flex: 40%;
   background-color: white;
-  padding: 2% 2% 0% 10%;
+  padding: 2% 1% 0% 15%;
 }
 
 /* Main column */
@@ -97,13 +97,13 @@ body {
   	-ms-flex: 60%; /* IE10 */
   	flex: 60%;
   	background-color: white;
-  	padding: 2% 10% 0% 2%;
+  	padding: 2% 15% 0% 1%;
 }
 
 /* Reserach container */
 .singlecol {   
   	background-color: white;
-  	padding: 2% 10%;
+  	padding: 2% 20%;
 }
 
 /* Footer */
