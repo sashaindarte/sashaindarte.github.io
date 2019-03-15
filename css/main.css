@@ -11,7 +11,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 1% 5% 0% 5%;
+  /*padding: 1% 5% 0% 5%;*/
   text-align: left;
   background: #633dff;
   color: white;
@@ -41,7 +41,7 @@ body {
   	position: sticky;
   	position: -webkit-sticky;
   	top: 0;
-	padding: 0em 0em 0em 2em;
+	/*padding: 0em 0em 0em 2em;*/
 }
 
 /* Style the navigation bar links */
