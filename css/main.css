@@ -94,6 +94,12 @@ body {
   	margin-bottom: 0%;
 }
 
+/* main text fonts */
+.main p{
+	font-size: 100%;
+  	text-align: justify;
+}
+
 /* COLUMNS AND ROWS FOR MAIN CONTENT */
 /* Column container */
 .row {  
