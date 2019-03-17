@@ -117,7 +117,7 @@ body {
   -ms-flex: 60%; /* IE10 */
   flex: 60%;
   text-align: center;
-  background-color: green;
+  background-color: white;
   padding: 2% 20% 0% 2%;
   /*background-color: blue;*/
 }
