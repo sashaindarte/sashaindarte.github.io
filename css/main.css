@@ -182,7 +182,7 @@ body {
   color: #2289ff;
   font-weight: bold;
   float: right;
-  margin-left: 2%;
+  margin-left: 0%;
 }
 
 .active:after {
