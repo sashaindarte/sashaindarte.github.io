@@ -153,35 +153,6 @@ body {
     background-color: #001A57;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-  .side {
-  	background-color: white;
-  	margin: auto;
-  	padding: 3% 0% 0% 0%;
-  }
-  .main{
-  	background-color: white;
-  	margin: auto;
-  	padding: 2% 10%;
-  }
-  .singlecol {   
-  	background-color: white;
-  	padding: 2% 10%;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-}
 .fa-envelope:hover {
     color: #633dff;
 }
@@ -219,9 +190,47 @@ body {
 }
 
 .panel {
-  padding: 0% 10% 0% 2%;
+  padding: 0% 2%;
+	width: 50%;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+  .side {
+  	background-color: white;
+  	margin: auto;
+  	padding: 3% 0% 0% 0%;
+  }
+  .main{
+  	background-color: white;
+  	margin: auto;
+  	padding: 2% 10%;
+  }
+  .singlecol {   
+  	background-color: white;
+  	padding: 2% 10%;
+  }
+	.panel {
+	  padding: 0% 2%;
+	  background-color: white;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 }
