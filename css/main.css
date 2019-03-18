@@ -70,7 +70,6 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: left;
   font-size: 110%;
 }
 
