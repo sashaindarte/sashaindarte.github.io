@@ -93,6 +93,11 @@ body {
   	text-align: justify;
 }
 
+.main p a, .side p a, .singlecol p a{
+	color: #2289ff;
+	text-decoration: none;
+}
+
 /* COLUMNS AND ROWS FOR MAIN CONTENT */
 /* Column container */
 .row {  
