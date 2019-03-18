@@ -190,8 +190,8 @@ body {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: white;
+  color: #2289ff;
   cursor: pointer;
   border: none;
   text-align: left;
@@ -203,15 +203,15 @@ body {
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: white;
 }
 
 .accordion:after {
   content: '[\002B]';
-  color: #777;
+  color: #2289ff;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 1%;
 }
 
 .active:after {
