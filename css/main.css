@@ -219,7 +219,7 @@ body {
 }
 
 .panel {
-  padding: 0 2%;
+  padding: 0% 10% 0% 2%;
   background-color: white;
   max-height: 0;
   overflow: hidden;
