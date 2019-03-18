@@ -68,6 +68,11 @@ body {
 	margin-bottom:0%;
 }
 
+.singlecol p{
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
 /* Right-aligned link */
 .navbar a.right {
   font-size: 110%;
@@ -191,8 +196,10 @@ body {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.1em;
+  font-size: 90%;
   transition: 0.4s;
+	margin-top: 0%;
+	margin-bottom: 0%;
 }
 
 .active, .accordion:hover {
