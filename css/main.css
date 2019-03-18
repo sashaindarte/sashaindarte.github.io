@@ -30,13 +30,6 @@ body {
   text-decoration: none;
   text-align: left;
 }
-
-/* Reserach container */
-.singlecol {   
-  	background-color: white;
-  	padding: 2% 20%;
-}
-
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
@@ -76,7 +69,7 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  float: left;
   font-size: 110%;
 }
 
@@ -114,7 +107,7 @@ body {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: white;
-  padding: 3% 1% 0% 20%;
+  padding: 3% 1% 0% 15%;
   align-content: center;
 }
 
@@ -124,8 +117,13 @@ body {
   flex: 60%;
   text-align: center;
   background-color: white;
-  padding: 2% 20% 0% 2%;
-  /*background-color: blue;*/
+  padding: 2% 15% 2% 2%;
+}
+
+/* Reserach container */
+.singlecol {   
+  	background-color: white;
+  	padding: 2% 10%;
 }
 
 /* crop image */
@@ -146,19 +144,34 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 80%) {
+@media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
+  }
+  .side {
+  	background-color: white;
+  	margin: auto;
+  	padding: 3% 0% 0% 0%;
+  }
+  .main{
+  	background-color: white;
+  	margin: auto;
+  	padding: 2% 10%;
+  }
+  .singlecol {   
+  	background-color: white;
+  	padding: 2% 10%;
   }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
-    float: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
 }
-
 .fa-envelope:hover {
     color: #633dff;
 }
