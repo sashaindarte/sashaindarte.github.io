@@ -207,19 +207,19 @@ body {
 }
 
 .accordion:after {
-  content: '[\002B]';
+  content: '[Show Abstract]';
   color: #2289ff;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .active:after {
-  content: "[\2212]";
+  content: "[Hide Abstract]";
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 2%;
   background-color: white;
   max-height: 0;
   overflow: hidden;
