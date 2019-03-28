@@ -2,157 +2,188 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
-body {
-  font-family:'Open Sans', 'Sans-Serif';
-  margin: 0;
-  font-size: 90%; 
-}
+/* BODY */
+		body {
+			font-family: "Open Sans";
+			margin: 0%;
+			font-size: 100%; 
+			font-weight: 400;
+		}
 
-/* SPACING */
-/* Header/logo Title */
-.header {
-  	padding: 1% 2%;
-  	text-align: left;
-  	background: #001A57;
-  	color: white;
-  	/*position: sticky;
-  	position: -webkit-sticky;
-  	top: 0;*/
-}
+		/* CONTAINER STRUCTURE */
+		.wrapper {
+			width: 850px;
+			margin: 0 auto;
+		}
 
-/* Style the navigation bar links */
-.navbar a {
-  /*float: left;*/
-  display: inline-block;
-  color: white;
-  padding: 0.5% 2%;
-  text-decoration: none;
-  /*text-align: left;*/
-}
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar {
-  	overflow: hidden;
-  	background-color: #333;
-  	position: sticky;
-  	position: -webkit-sticky;
-  	top: 0;
-  	/*position:fixed;
-  	width: 100%;*/
-  	padding: 0em 0em 0em 0em;
-	text-align: right;
-}
-
-/* FONT APPEARANCE */
-.header h1 {
-  	font-size: 275%;
-  	margin-top: 0%;
-  	margin-bottom: 0%;
-}
-
-.header p {
-	font-size: 110%;
-	margin-top:0%;
-	margin-bottom:0%;
-}
-
-/* font for name part of navbar */
-.navbar a h1{
-	font-size: 250%;
-  	margin-top: 0%;
-  	margin-bottom: 0%;
-}
-.navbar a p{
-	font-size: 90%;
-	margin-top:0%;
-	margin-bottom:0%;
-}
-
-.singlecol p{
-	margin-top: 0%;
-	margin-bottom: 0%;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  font-size: 110%;
-}
-
-/* Change color on hover */
-.navbar a.right:hover {
-  background-color: #ddd;
-  color: black;
-  font-weight: bold;
-}
-
-/* side bar fonts */
-.side p, h3{
-	font-size: 100%;
-	margin-top: 0%;
-  	margin-bottom: 0%;
-}
-
-/* main text fonts */
-.main p{
-	font-size: 100%;
-  	text-align: justify;
-}
-
-.main p a, .side p a, .singlecol p a{
-	color: #2289ff;
-	text-decoration: none;
-}
-
-/* COLUMNS AND ROWS FOR MAIN CONTENT */
+		/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+		.navbar {
+			overflow: hidden;
+			/*background-color: #333;*/
+			background: #001A57; /* blue */
+			position: sticky;
+			position: -webkit-sticky;
+			top: 0;
+			padding: .75% 0% 1% 0%;
+			text-align: right;
+		}
 /* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
+		.row {  
+			display: -ms-flexbox; /* IE10 */
+			display: flex;
+			-ms-flex-wrap: wrap; /* IE10 */
+			flex-wrap: wrap;
+		}
 
-/* Create two unequal columns that sits next to each other */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: white;
-  padding: 3% 1% 0% 15%;
-  align-content: center;
-}
+		/* Create two unequal columns that sits next to each other */
+		.side {
+			-ms-flex: 30%; /* IE10 */
+			flex: 30%;
+			background-color: white;
+			padding: 2% 0%;
+			align-content: center;*/
+		}
 
-/* Main column */
-.main {   
-  -ms-flex: 60%; /* IE10 */
-  flex: 60%;
-  text-align: center;
-  background-color: white;
-  padding: 2% 15% 2% 2%;
-}
+		/* Main column */
+		.main {   
+			-ms-flex: 70%; /* IE10 */
+			flex: 70%;
+			background-color: white;
+			/*padding: 2% 15% 2% 2%;*/
+			/*background-color: blue;*/
+		}
 
-/* Reserach container */
-.singlecol {   
-  	background-color: white;
-  	padding: 2% 10%;
-}
+		/* Reserach container */
+		.singlecol {   
+			/*background-color: white;
+			padding: 2% 10%;*/
+		}
 
-/* crop image */
-.img-circle {
-    /*border-radius: 50%;*/
-}
+		/* crop image */
+		.img-circle {
+			/*border-radius: 50%;*/
+		}
 
-/* FOOTER */
-.footer {
-	font-size: 75%;
-    position: fixed;
-   	left: 0;
-   	bottom: 0;
-   	width: 100%;
-   	text-align: center;
-    color: white;
-    background-color: #001A57;
-}
+		/* FOOTER */
+		.footer {
+			font-size: 75%;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			color: white;
+			background-color: #001A57;
+		}		
 
+		/* FONT */
+		/* Style the navigation bar links */
+		.navbar a {
+			/*float: right;*/
+			display: inline-block;
+			color: white;
+			/*padding: 0.5% 2%;*/
+			text-decoration: none;
+			/*text-align: left;*/
+		}
+		.navbar a h1{
+			font-size: 150%;
+			margin-top: 0%;
+			margin-bottom: 0%;
+		}
+		.navbar a p{
+			font-size: 110%;
+			line-height: 110%;
+			margin-top:0%;
+			margin-bottom:0%;
+		}
+		.navbar a.right:hover {
+			/*background-color: #ddd;
+			color: black;*/
+			color: #b47fff; /* purple */
+		}
+		/* Right-aligned links */
+		.navbar a.right {
+			/*float: right;*/
+			padding: 0.5% 2%;
+			font-size: 110%;
+			font-weight:bold;
+		}
+		/* left links */
+		.navbar a.left {
+			float: left;
+			text-align: left;
+		}
+		
+
+		/* side bar fonts */
+		.side p, h3{
+			font-size: 100%;
+			margin-top: 0%;
+			margin-bottom: 0%;
+		}
+
+		/* side bar fonts */
+		.main p{
+			font-size: 100%;
+			text-align: justify;
+			line-height: 150%;
+			
+		}
+
+		.main p a, .side p a, .singlecol p a{
+			color: #2289ff;
+			text-decoration: none;
+			font-weight:bold; /* newnew*/
+		}
+
+		/* RESPONSIVE LAYOUT */
+		@media screen and (max-width: 1000px) {
+			.wrapper {
+				width: 700px;
+			}
+		}
+		/* when screen < 700 px, stack the columns */
+		@media screen and (max-width: 750px) {
+			.row {   
+				flex-direction: column;
+			}
+			.side {
+				margin: auto;
+				padding: 3% 0% 0% 0%;
+			}
+			.main{
+				margin: auto;
+				padding: 2% 10%;
+			}
+			.singlecol {   
+				padding: 3% 10%;
+			}
+			.wrapper {
+				width: 100%;
+			}
+		}
+		/* Screen is less than 400px wide, then make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 500px) {
+			.navbar {
+				padding: .75% 0% 0% 0%;
+			}
+			.navbar a {
+				display: inline-block;
+				width: 100%;
+				/*float: center;*/
+				text-align: center;
+			}
+			.navbar a.left {
+				padding: 0% 10%;
+				/*float: center;*/
+				/*text-align: center;*/
+			}
+			.navbar a.right {
+				/*float: center;*/
+				background-color: #333;
+			}
+		}
 .fa-envelope:hover {
     color: #633dff;
 }
@@ -195,34 +226,4 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-  .side {
-  	background-color: white;
-  	margin: auto;
-  	padding: 3% 0% 0% 0%;
-  }
-  .main{
-  	background-color: white;
-  	margin: auto;
-  	padding: 2% 10%;
-  }
-  .singlecol {   
-  	background-color: white;
-  	padding: 2% 10%;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
 }
