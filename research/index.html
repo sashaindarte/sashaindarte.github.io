@@ -6,13 +6,75 @@ title: Sasha Indarte - Research
 	<div class="wrapper">
 	<div class="singlecol">	
 		
+		<style>
+		.toggle-header {
+			cursor: pointer;
+            font-weight: bold;
+		}
+		.toggle-content {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.5s ease-out;
+		}
+		.toggle-container {
+			display: none;
+		}
+		.toggle-header:hover {
+            color: #b47fff;
+		}
+		.toggle-header:focus + .toggle-container + .toggle-content,
+		.toggle-container:checked + .toggle-content {
+			max-height: 1000px;
+			transition: max-height 1s ease-in;
+		}
+	</style>
+		
+		
 		<h2>Publications</h2>
+		
+		<div class="container">
+			<p style="margin-bottom:0px;"><a href="/research/indarte_bk.pdf"><u><b>
+				Moral Hazard versus Liquidity in Household Bankruptcy
+				</b></u></a>
+			</p>
+			
+			<p style="padding-left:2em;padding-bottom:0em;margin-top:0em;margin-bottom:0em"> 
+				Journal of Finance, forthcoming
+			</p>
+			
+			<label for="toggle1a" class="toggle-header">&emsp;&emsp;[Abstract]</label>
+	    		<label for="toggle1b" class="toggle-header">&emsp;[Bibtex]</label>
+
+			<input type="checkbox" id="toggle1a" class="toggle-container" />
+			<div class="toggle-content">
+			<p style="padding-left:4em;padding-bottom:1em;margin-top:0em;font-size:0.9em;" align = "justify">
+				This paper studies the role of moral hazard and liquidity in driving household bankruptcy. First, I estimate that increases in potential debt forgiveness have a positive, but small, effect on filing using a regression kink design. Second, exploiting quasi-experimental variation in mortgage payment reductions, I estimate that filing is five times more responsive to cash-on-hand than relief generosity. Using a sufficient statistic, I show the estimates imply large consumption-smoothing benefits of bankruptcy for the marginal filer. Finally, I conclude 83% of the filing response to dischargeable debt comes from liquidity effects rather than a moral hazard response to financial incentives.
+			</p>
+			</div>
+
+	    		<input type="checkbox" id="toggle1b" class="toggle-container" />
+			<div class="toggle-content">
+			<p style="padding-left:4em;padding-bottom:1em;margin-top:0em;font-size:0.9em;" align = "justify">
+				@article{indarte2023moral, <br>
+				  title={Moral Hazard versus Liquidity in Household Bankruptcy}, <br>
+				  author={Indarte, Sasha}, <br>
+				  journal=Journal of Finance, <br>
+				  year={forthcoming}<br>
+				}
+			</p>
+			</div>
+
+		</div>
+
+		
+		
+		
 		
 		<p align="justify"> <a href = "/research/indarte_bk.pdf">
 			<u><b>Moral Hazard versus Liquidity in Household Bankruptcy</b></u></a>, January 2023 (<i>Journal of Finance</i>, forthcoming)
 		</p>
-		<p style="padding-left:2em;padding-bottom:1em;margin-top:-1em;font-size:0.9em;">
-			<font size="0.8em"> (previously titled <i>The Impact of Debt Relief Generosity and Liquid Wealth on Household Bankruptcy</i>)</font>
+		<p style="padding-left:2em;padding-bottom:1em;margin-top:-1em;font-size:0.85em;">
+			<font size="0.9em"> (previously titled <i>The Impact of Debt Relief Generosity and Liquid Wealth on Household Bankruptcy</i>)</font>
 			<!--
 			<br>
 			<i>Journal of Finance</i> (forthcoming)-->
