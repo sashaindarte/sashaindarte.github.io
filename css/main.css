@@ -13,7 +13,7 @@
 
 		/* CONTAINER STRUCTURE */
 		.wrapper {
-			width: 900px;
+			width: 1100px;
 			margin: 0 auto;
 		}
 
@@ -140,13 +140,13 @@
 		}
 
 		/* RESPONSIVE LAYOUT */
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 1100px) {
 			.wrapper {
-				width: 700px;
+				width: 850px;
 			}
 		}
 		/* when screen < 700 px, stack the columns */
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 850px) {
 			.row {   
 				flex-direction: column;
 			}
@@ -165,7 +165,7 @@
 				width: 100%;
 			}
 		}
-		/* Screen is less than 400px wide, then make the navigation links stack on top of each other instead of next to each other */
+		/* Screen is less than 600px wide, then make the navigation links stack on top of each other instead of next to each other */
 		@media screen and (max-width: 600px) {
 			.navbar {
 				padding: .75% 0% 0% 0%;
