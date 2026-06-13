@@ -4,16 +4,35 @@
 
 /* BODY */
 		body {
-			font-family: "Open Sans";
+			font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 			margin: 0%;
-			font-size: 100%; 
+			font-size: 100%;
 			font-weight: 400;
 			padding-bottom: 50px;
 		}
 
+		/* HEADINGS */
+		h2 {
+			border-bottom: 1px solid #e0e0e0;
+			padding-bottom: 0.3em;
+			margin-top: 1.5em;
+		}
+
+		/* PROFILE PHOTO */
+		.profile-photo {
+			border-radius: 8px;
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		/* SPACE BETWEEN RESEARCH PAPER ENTRIES */
+		.singlecol .container {
+			margin-bottom: 1.5em;
+		}
+
 		/* CONTAINER STRUCTURE */
 		.wrapper {
-			width: 1100px;
+			width: 92%;
+			max-width: 1100px;
 			margin: 0 auto;
 		}
 
@@ -25,7 +44,7 @@
 			position: sticky;
 			position: -webkit-sticky;
 			top: 0;
-			padding: .75% 0% 1% 0%;
+			padding: 0.75rem 0;
 			text-align: right;
 		}
 /* Column container */
@@ -102,14 +121,20 @@
 		.navbar a.right:hover {
 			/*background-color: #ddd;
 			color: black;*/
-			color: #b47fff; /* purple */
+			color: #06aafc; /* bay blue */
 		}
 		/* Right-aligned links */
 		.navbar a.right {
 			/*float: right;*/
-			padding: 0.5% 2%;
+			padding: 0.4rem 1rem;
 			font-size: 110%;
 			font-weight:bold;
+			border-bottom: 2px solid transparent;
+		}
+		/* Current-page indicator */
+		.navbar a.right.active-page {
+			color: #06aafc; /* bay blue */
+			border-bottom-color: #06aafc;
 		}
 		/* left links */
 		.navbar a.left {
@@ -128,24 +153,47 @@
 		/* side bar fonts */
 		.main p{
 			font-size: 100%;
-			text-align: justify;
-			line-height: 150%;
-			
+			text-align: left;
+			line-height: 1.6;
+			max-width: 70ch;
 		}
 
-		.main p a, .side p a, .singlecol p a{
-			color: #2289ff;
+		.main p a, .side p a, .singlecol a{
+			color: #990000; /* Wharton red */
 			text-decoration: none;
 			font-weight:bold; /* newnew*/
 		}
 
-		/* RESPONSIVE LAYOUT */
-		@media screen and (max-width: 1100px) {
-			.wrapper {
-				width: 850px;
-			}
+		/* neutralize hand-rolled <u> tags; underline only on hover */
+		.main p a u, .side p a u, .singlecol a u{
+			text-decoration: none;
 		}
-		/* when screen < 700 px, stack the columns */
+
+		.main p a:hover, .side p a:hover, .singlecol a:hover{
+			color: #06aafc; /* bay blue */
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+
+		/* DIVIDERS BETWEEN RECENT-UPDATES ITEMS (homepage) */
+		.main h3 ~ p {
+			border-top: 1px solid #e8e8e8;
+			padding-top: 0.8em;
+			margin-top: 0.8em;
+		}
+		.main h3 + p {
+			border-top: none;
+			padding-top: 0;
+		}
+
+		/* CAP ABSTRACT/BIBTEX LINE LENGTH (research) */
+		.toggle-content p {
+			max-width: 70ch;
+			text-align: justify;
+		}
+
+		/* RESPONSIVE LAYOUT */
+		/* when screen < 850 px, stack the columns */
 		@media screen and (max-width: 850px) {
 			.row {   
 				flex-direction: column;
@@ -183,14 +231,17 @@
 			}
 			.navbar a.right {
 				/*float: center;*/
-				background-color: #333;
+				background-color: transparent;
+				border-top: 1px solid rgba(255, 255, 255, 0.18);
+				border-bottom: none;
+				padding: 0.6rem 1rem;
 			}
 		}
 .fa-envelope:hover {
-    color: #633dff;
+    color: #06aafc;
 }
 .fa-twitter:hover {
-    color: #633dff;
+    color: #06aafc;
 }
 
 .accordion {

@@ -14,8 +14,11 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		</head>
 		<body>
@@ -61,6 +64,22 @@
 				var parts = ["aindarte", "edu", "wharton.upenn", "&#46;", "&#64;"];
 				var email = parts[0] + parts[4] + parts[2] + parts[3] + parts[1];
 				document.getElementById("email").innerHTML=email;
+			</script>
+			<script>
+				// Highlight the current page in the navbar
+				(function () {
+					var path = window.location.pathname.replace(/index\.html$/, "");
+					if (path.length > 1) path = path.replace(/\/+$/, "");
+					var links = document.querySelectorAll(".navbar a.right");
+					for (var i = 0; i < links.length; i++) {
+						var href = links[i].getAttribute("href").replace(/\/+$/, "");
+						var isHome = (href === "" || href === "/");
+						var active = isHome
+							? (path === "" || path === "/")
+							: (path === href);
+						if (active) { links[i].classList.add("active-page"); }
+					}
+				})();
 			</script>
 		</body>
 	</html>
