@@ -1,3 +1,20 @@
 # Main info
 name: Sasha Indarte
 markdown: kramdown
+url: https://sashaindarte.github.io
+description: Sasha Indarte is an Assistant Professor of Finance at the Wharton School studying household finance, consumer credit, bankruptcy and debt relief, and monetary policy.
+
+# Sitemap (sitemap.xml generated at build time)
+plugins:
+  - jekyll-sitemap
+
+# Keep old job ads out of the sitemap
+defaults:
+  - scope:
+      path: "wharton_predoc_BIS_2022.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "research/wharton_RF_job.pdf"
+    values:
+      sitemap: false
